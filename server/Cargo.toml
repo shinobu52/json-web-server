@@ -1,0 +1,19 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+api = {path = "../api"}
+log = "0.4.17"
+env_logger = "0.9.0"
+csv = "1.1.6"
+actix-web = "4.0.1"
+actix-web-multipart-file = "0.1.1"
+dotenv = "0.15.0"
+chrono = "0.4.19"
+diesel = { version = "1.4.8", features = ["postgres", "chrono", "r2d2"] }
+futures = "0.3.21"
+itertools = "0.10.3"
